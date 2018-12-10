@@ -12,6 +12,9 @@ CMakeFiles/get_next_line.dir/sources/ft_bzero.c.o
 CMakeFiles/get_next_line.dir/sources/ft_cpyuntil.c.o
  /Users/qhetting/get_next_line/sources/ft_cpyuntil.c
  /Users/qhetting/get_next_line/sources/libft.h
+CMakeFiles/get_next_line.dir/sources/ft_is_null_ptr.c.o
+ /Users/qhetting/get_next_line/sources/ft_is_null_ptr.c
+ /Users/qhetting/get_next_line/sources/libft.h
 CMakeFiles/get_next_line.dir/sources/ft_isalnum.c.o
  /Users/qhetting/get_next_line/sources/ft_isalnum.c
  /Users/qhetting/get_next_line/sources/libft.h

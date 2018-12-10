@@ -64,6 +64,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/get_next_line.dir/sources/ft_tolower.c.o"
   "CMakeFiles/get_next_line.dir/sources/ft_toupper.c.o"
   "CMakeFiles/get_next_line.dir/get_next_line.c.o"
+  "CMakeFiles/get_next_line.dir/sources/ft_is_null_ptr.c.o"
   "get_next_line.pdb"
   "get_next_line"
 )

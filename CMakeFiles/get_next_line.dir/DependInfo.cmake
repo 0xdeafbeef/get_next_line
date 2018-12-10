@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/qhetting/get_next_line/sources/ft_atoi.c" "/Users/qhetting/get_next_line/CMakeFiles/get_next_line.dir/sources/ft_atoi.c.o"
   "/Users/qhetting/get_next_line/sources/ft_bzero.c" "/Users/qhetting/get_next_line/CMakeFiles/get_next_line.dir/sources/ft_bzero.c.o"
   "/Users/qhetting/get_next_line/sources/ft_cpyuntil.c" "/Users/qhetting/get_next_line/CMakeFiles/get_next_line.dir/sources/ft_cpyuntil.c.o"
+  "/Users/qhetting/get_next_line/sources/ft_is_null_ptr.c" "/Users/qhetting/get_next_line/CMakeFiles/get_next_line.dir/sources/ft_is_null_ptr.c.o"
   "/Users/qhetting/get_next_line/sources/ft_isalnum.c" "/Users/qhetting/get_next_line/CMakeFiles/get_next_line.dir/sources/ft_isalnum.c.o"
   "/Users/qhetting/get_next_line/sources/ft_isalpha.c" "/Users/qhetting/get_next_line/CMakeFiles/get_next_line.dir/sources/ft_isalpha.c.o"
   "/Users/qhetting/get_next_line/sources/ft_isascii.c" "/Users/qhetting/get_next_line/CMakeFiles/get_next_line.dir/sources/ft_isascii.c.o"
