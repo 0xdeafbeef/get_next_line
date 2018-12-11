@@ -51,6 +51,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/qhetting/get_next_line/sources/ft_striteri.c" "/Users/qhetting/get_next_line/CMakeFiles/get_next_line.dir/sources/ft_striteri.c.o"
   "/Users/qhetting/get_next_line/sources/ft_strjoin.c" "/Users/qhetting/get_next_line/CMakeFiles/get_next_line.dir/sources/ft_strjoin.c.o"
   "/Users/qhetting/get_next_line/sources/ft_strjoinch.c" "/Users/qhetting/get_next_line/CMakeFiles/get_next_line.dir/sources/ft_strjoinch.c.o"
+  "/Users/qhetting/get_next_line/sources/ft_strjoinf.c" "/Users/qhetting/get_next_line/CMakeFiles/get_next_line.dir/sources/ft_strjoinf.c.o"
   "/Users/qhetting/get_next_line/sources/ft_strlcat.c" "/Users/qhetting/get_next_line/CMakeFiles/get_next_line.dir/sources/ft_strlcat.c.o"
   "/Users/qhetting/get_next_line/sources/ft_strlen.c" "/Users/qhetting/get_next_line/CMakeFiles/get_next_line.dir/sources/ft_strlen.c.o"
   "/Users/qhetting/get_next_line/sources/ft_strmap.c" "/Users/qhetting/get_next_line/CMakeFiles/get_next_line.dir/sources/ft_strmap.c.o"

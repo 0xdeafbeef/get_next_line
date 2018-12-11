@@ -74,4 +74,4 @@ add_executable(get_next_line
         sources/ft_toupper.c
         sources/libft.h
         get_next_line.c
-        get_next_line.h sources/ft_is_null_ptr.c)
+        get_next_line.h sources/ft_is_null_ptr.c sources/ft_strjoinf.c)

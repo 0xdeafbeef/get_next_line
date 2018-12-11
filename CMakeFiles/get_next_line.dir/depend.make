@@ -129,6 +129,9 @@ CMakeFiles/get_next_line.dir/sources/ft_strjoin.c.o: sources/libft.h
 CMakeFiles/get_next_line.dir/sources/ft_strjoinch.c.o: sources/ft_strjoinch.c
 CMakeFiles/get_next_line.dir/sources/ft_strjoinch.c.o: sources/libft.h
 
+CMakeFiles/get_next_line.dir/sources/ft_strjoinf.c.o: sources/ft_strjoinf.c
+CMakeFiles/get_next_line.dir/sources/ft_strjoinf.c.o: sources/libft.h
+
 CMakeFiles/get_next_line.dir/sources/ft_strlcat.c.o: sources/ft_strlcat.c
 CMakeFiles/get_next_line.dir/sources/ft_strlcat.c.o: sources/libft.h
 

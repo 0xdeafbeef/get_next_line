@@ -129,6 +129,9 @@ CMakeFiles/get_next_line.dir/sources/ft_strjoin.c.o
 CMakeFiles/get_next_line.dir/sources/ft_strjoinch.c.o
  /Users/qhetting/get_next_line/sources/ft_strjoinch.c
  /Users/qhetting/get_next_line/sources/libft.h
+CMakeFiles/get_next_line.dir/sources/ft_strjoinf.c.o
+ /Users/qhetting/get_next_line/sources/ft_strjoinf.c
+ /Users/qhetting/get_next_line/sources/libft.h
 CMakeFiles/get_next_line.dir/sources/ft_strlcat.c.o
  /Users/qhetting/get_next_line/sources/ft_strlcat.c
  /Users/qhetting/get_next_line/sources/libft.h

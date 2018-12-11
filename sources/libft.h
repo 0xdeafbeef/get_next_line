@@ -91,5 +91,6 @@ void				ft_lstaddback(t_list *lst, t_list *new);
 char				*ft_strjoinch(char const *s1, char c);
 void				ft_swap(int *a, int *b);
 int 				ft_is_null_ptr(void *ptr);
+char				*ft_strjoinf(char  *s1, char  *s2);
 
 #endif

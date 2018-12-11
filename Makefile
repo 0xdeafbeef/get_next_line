@@ -1392,6 +1392,33 @@ sources/ft_strjoinch.c.s:
 	$(MAKE) -f CMakeFiles/get_next_line.dir/build.make CMakeFiles/get_next_line.dir/sources/ft_strjoinch.c.s
 .PHONY : sources/ft_strjoinch.c.s
 
+sources/ft_strjoinf.o: sources/ft_strjoinf.c.o
+
+.PHONY : sources/ft_strjoinf.o
+
+# target to build an object file
+sources/ft_strjoinf.c.o:
+	$(MAKE) -f CMakeFiles/get_next_line.dir/build.make CMakeFiles/get_next_line.dir/sources/ft_strjoinf.c.o
+.PHONY : sources/ft_strjoinf.c.o
+
+sources/ft_strjoinf.i: sources/ft_strjoinf.c.i
+
+.PHONY : sources/ft_strjoinf.i
+
+# target to preprocess a source file
+sources/ft_strjoinf.c.i:
+	$(MAKE) -f CMakeFiles/get_next_line.dir/build.make CMakeFiles/get_next_line.dir/sources/ft_strjoinf.c.i
+.PHONY : sources/ft_strjoinf.c.i
+
+sources/ft_strjoinf.s: sources/ft_strjoinf.c.s
+
+.PHONY : sources/ft_strjoinf.s
+
+# target to generate assembly for a file
+sources/ft_strjoinf.c.s:
+	$(MAKE) -f CMakeFiles/get_next_line.dir/build.make CMakeFiles/get_next_line.dir/sources/ft_strjoinf.c.s
+.PHONY : sources/ft_strjoinf.c.s
+
 sources/ft_strlcat.o: sources/ft_strlcat.c.o
 
 .PHONY : sources/ft_strlcat.o
@@ -2055,6 +2082,9 @@ help:
 	@echo "... sources/ft_strjoinch.o"
 	@echo "... sources/ft_strjoinch.i"
 	@echo "... sources/ft_strjoinch.s"
+	@echo "... sources/ft_strjoinf.o"
+	@echo "... sources/ft_strjoinf.i"
+	@echo "... sources/ft_strjoinf.s"
 	@echo "... sources/ft_strlcat.o"
 	@echo "... sources/ft_strlcat.i"
 	@echo "... sources/ft_strlcat.s"

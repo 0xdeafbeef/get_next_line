@@ -1,5 +1,6 @@
-#include <libft.h>
-char	*ft_strjoin(char const *s1, char const *s2)
+#include "libft.h"
+
+char	*ft_strjoinf(char  *s1, char  *s2)
 {
 	char	*temp;
 
@@ -11,5 +12,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 		return (NULL);
 	ft_strcpy(temp, s1);
 	ft_strcat(temp, s2);
+	free(s1);
+	free(s2);
 	return (temp);
 }
