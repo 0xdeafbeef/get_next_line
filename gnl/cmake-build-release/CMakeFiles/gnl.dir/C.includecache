@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../sources/libft.h
+string.h
+-
+unistd.h
+-
+stdlib.h
+-
+
+/Users/qhetting/get_next_line/gnl/get_next_line.c
+stdio.h
+-
+get_next_line.h
+/Users/qhetting/get_next_line/gnl/get_next_line.h
+locale.h
+-
+
+/Users/qhetting/get_next_line/gnl/get_next_line.h
+fcntl.h
+-
+printf.h
+-
+unistd.h
+/Users/qhetting/get_next_line/gnl/unistd.h
+libft.h
+/Users/qhetting/get_next_line/gnl/libft.h
+
