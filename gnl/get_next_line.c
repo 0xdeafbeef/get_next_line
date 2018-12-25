@@ -25,18 +25,18 @@ char *magic(const int fd, char **storage, char *cr_line, char *temp)
 	cr_line = ft_strdup(temp); // same
 	free(temp);
 	temp = ft_strjoin(storage[fd], cr_line); //cr_line +
-	free(&storage[fd]);
+//	free(&storage[fd]); //fail reason
 	storage[fd] = ft_strdup(temp); // all with \n
 	free(temp);
 	return cr_line;
 }
 
-void init(const int fd, char **storage, char **cr_line, char **redd)
+void init( char **strg, char **cr_line, char **redd)
 {
-	(*redd) = ft_strnew(BUFF_SIZE);
-	(*cr_line) = ft_strnew(BUFF_SIZE);
-	if (storage[fd] == NULL)
-		storage[fd] = (*cr_line);
+	*redd = ft_strnew(BUFF_SIZE);
+	*cr_line = ft_strnew(BUFF_SIZE);
+	if (*strg == NULL)
+		*strg = ft_strnew(1);
 }
 
 int get_next_line(const int fd, char **line)
@@ -50,7 +50,7 @@ int get_next_line(const int fd, char **line)
 	temp = 0x0;
 	if (fd == -1)
 		return -1;
-	init(fd, storage, &cr_line, &redd);
+	init( &storage[fd], &cr_line, &redd);
 	while (ft_strchr(storage[fd], '\n') == 0x0 &&(response =
 			(int)read(fd, redd, BUFF_SIZE)) !=0 &&
 			ft_strchr(redd, 10) == 0x0)
@@ -79,4 +79,6 @@ int main(int argc, char **argv)
 	{
 		printf("%s\n", read_b);
 	}
+//	get_next_line(fd, &read_b);
+//	printf("%s\n", read_b);
 }
