@@ -4,7 +4,7 @@
 
 #ifndef GET_NEXT_LINE_GET_NEXT_LINE_H
 #define GET_NEXT_LINE_GET_NEXT_LINE_H
-#define BUFF_SIZE 1000
+#define BUFF_SIZE 2
 #include <fcntl.h>
 #include <printf.h>
 #include "unistd.h"
