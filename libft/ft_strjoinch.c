@@ -6,7 +6,7 @@
 /*   By: qhetting <qhetting@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/07 20:49:37 by qhetting          #+#    #+#             */
-/*   Updated: 2018/12/07 20:58:19 by qhetting         ###   ########.fr       */
+/*   Updated: 2018/12/27 19:35:55 by qhetting         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ char	*ft_strjoinch(char const *s1, char c)
 	if (!new_str)
 		return (NULL);
 	i = -1;
-	while (++i < s1_len)
+	while (++i < (int)s1_len)
 		*(new_str + i) = *(s1 + i);
 	*(new_str + i) = c;
 	return (new_str);

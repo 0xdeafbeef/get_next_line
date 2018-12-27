@@ -8,7 +8,7 @@ char *ft_strcopy_until(const char *string, char ch)
 
 	i = -1;
 	l = 0;
-	while (string[l] != ch && l < ft_strlen(string))
+	while (string[l] != ch && l < (int)ft_strlen(string))
 		l++;
 
 	ret = ft_strnew((size_t)l);
