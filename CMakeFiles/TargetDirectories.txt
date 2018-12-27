@@ -1,3 +1,0 @@
-/Users/qhetting/get_next_line/CMakeFiles/rebuild_cache.dir
-/Users/qhetting/get_next_line/CMakeFiles/edit_cache.dir
-/Users/qhetting/get_next_line/CMakeFiles/get_next_line.dir
