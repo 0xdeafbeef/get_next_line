@@ -10,6 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <printf.h>
 #include "get_next_line.h"
 
 void free_m(char **b, char **c)
@@ -32,7 +33,8 @@ void init(char **strg, char **cr_line, char **redd, int *resp)
 char *parse_and_cut(char **stor, char **cr_line, char **redd)
 {
 	char *temp;
-
+//	if (ft_strchr(*stor, '\n') == 0x0)
+//		return ft_strjoin(*cr_line, *redd);
 	if (*redd != 0x0)
 	{
 		temp = ft_strjoin(*cr_line, *redd); //here we joines redd and buff
@@ -60,10 +62,13 @@ char *parse_and_cut(char **stor, char **cr_line, char **redd)
 
 char *read_logics(char **cr_line, char **redd, char **temp)
 {
+	if (!*temp)
+		free(*temp);
 	*temp = ft_strdup(*cr_line);
 	free(*cr_line);
 	*cr_line = ft_strjoin(*temp, *redd);
 	free(*temp);
+	ft_bzero(*redd, BUFF_SIZE);
 	return (*cr_line);
 }
 
