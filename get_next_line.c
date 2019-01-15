@@ -3,11 +3,11 @@
 #include "get_next_line.h"
 #include <stdio.h>
 
-char			*send_result(char *str, char **line)
+char *send_result(char *str, char **line)
 {
-	int			i;
-	char		*del;
-	char		*tmp;
+	int i;
+	char *del;
+	char *tmp;
 
 	i = 0;
 	tmp = ft_strnew(0);
@@ -21,22 +21,23 @@ char			*send_result(char *str, char **line)
 	return (tmp);
 }
 
-int				get_next_line(const int fd, char **line)
+int get_next_line(const int fd, char **line)
 {
-	char		*buf;
-	int			redd;
-	static char	*str[4096];
-	char		*tmp;
+	char *buf;
+	static char *str[MAX_UNIX_KERNEL_FD_COUNT];
+	char *tmp;
 
 	buf = ft_strnew(BUFF_SIZE);
 	if (fd < 0 || !line || read(fd, buf, 0) < 0)
+	{
+		ft_strdel(str);
 		return (-1);
+	}
 	if (str[fd] == NULL)
 		str[fd] = ft_strnew(0);
-	while (!ft_strchr(str[fd], '\n') && (redd = (int) read(fd, buf, BUFF_SIZE)) > 0)
+	while (!ft_strchr(str[fd], '\n') && read(fd, buf, BUFF_SIZE) > 0)
 	{
 		tmp = str[fd];
-		buf[redd] = '\0';
 		str[fd] = ft_strjoin(tmp, buf);
 		ft_strdel(&tmp);
 	}
@@ -48,4 +49,38 @@ int				get_next_line(const int fd, char **line)
 	}
 	free(buf);
 	return (0);
+}
+
+int main()
+{
+	char *line;
+	int fd;
+	int fd2;
+	int fd3;
+	int diff_file_size;
+
+	system("mkdir -p sandbox");
+	system("openssl rand -base64 $((30 * 1000 * 3/4)) | tr -d '\n' | tr -d '\r' > sandbox/one_big_fat_line.txt");
+	system("echo '\n' >> sandbox/one_big_fat_line.txt");
+
+	fd = open("sandbox/one_big_fat_line.txt", O_RDONLY);
+	fd2 = open("sandbox/one_big_fat_line.txt.mine", O_CREAT | O_RDWR | O_TRUNC,
+			   0755);
+
+	while (get_next_line(fd, &line) == 1)
+	{
+		write(fd2, line, strlen(line));
+		write(fd2, "\n", 1);
+	}
+	if (line)
+		write(fd2, line, strlen(line));
+	close(fd);
+	close(fd2);
+
+	system("diff sandbox/one_big_fat_line.txt sandbox/one_big_fat_line.txt.mine > sandbox/one_big_fat_line.diff");
+	fd3 = open("sandbox/one_big_fat_line.diff", O_RDONLY);
+	diff_file_size = read(fd3, NULL, 10);
+	close(fd3);
+
+
 }
