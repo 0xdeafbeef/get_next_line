@@ -5,8 +5,8 @@
 #ifndef GET_NEXT_LINE_H
 # define GET_NEXT_LINE_H
 
-#define MAX_LINUX_KERNEL_FD_COUNT 590432
-#define BUFF_SIZE 64
+#define MAX_UNIX_KERNEL_FD_COUNT 590432
+#define BUFF_SIZE 10
 #include <fcntl.h>
 #include <unistd.h>
 #include "libft/libft.h"
