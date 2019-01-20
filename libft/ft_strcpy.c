@@ -6,22 +6,14 @@
 /*   By: qhetting <qhetting@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/02 17:12:59 by qhetting          #+#    #+#             */
-/*   Updated: 2018/12/02 17:13:37 by qhetting         ###   ########.fr       */
+/*   Updated: 2019/01/20 21:25:02 by qhetting         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
+#include "libft.h"
 
 char	*ft_strcpy(char *dst, const char *src)
 {
-	size_t i;
-
-	i = 0;
-	while (*(src + i))
-	{
-		*(dst + i) = *(src + i);
-		i++;
-	}
-	*(dst + i) = '\0';
-	return (dst);
+	return (ft_memcpy(dst, src, ft_strlen(src) + 1));
 }

@@ -6,21 +6,20 @@
 /*   By: qhetting <qhetting@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/02 17:04:48 by qhetting          #+#    #+#             */
-/*   Updated: 2018/12/02 17:04:49 by qhetting         ###   ########.fr       */
+/*   Updated: 2019/01/20 21:22:04 by qhetting         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <strings.h>
 
-void	*ft_memcpy(void *dst, const void *src, size_t n)
+void			*ft_memcpy(void *dst, const void *src, size_t n)
 {
-	size_t counter;
+	char		*d;
+	const char	*s;
 
-	counter = 0;
-	while (counter < n)
-	{
-		*((char *)dst + counter) = *((char *)src + counter);
-		counter++;
-	}
+	d = dst;
+	s = src;
+	while (n--)
+		*d++ = *s++;
 	return (dst);
 }

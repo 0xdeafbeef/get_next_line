@@ -6,7 +6,7 @@
 /*   By: qhetting <qhetting@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/02 17:13:52 by qhetting          #+#    #+#             */
-/*   Updated: 2018/12/02 17:16:15 by qhetting         ###   ########.fr       */
+/*   Updated: 2019/01/15 20:30:34 by qhetting         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strdup(const char *src)
 	char	*tmp;
 	int		l;
 
-	l = ft_strlen(src);
+	l = (int)ft_strlen(src);
 	i = -1;
 	tmp = (char*)malloc(l + 1);
 	if (tmp == NULL)

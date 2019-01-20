@@ -6,7 +6,7 @@
 /*   By: qhetting <qhetting@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/07 18:56:17 by qhetting          #+#    #+#             */
-/*   Updated: 2018/12/07 20:57:01 by qhetting         ###   ########.fr       */
+/*   Updated: 2019/01/20 21:27:55 by qhetting         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ char				*ft_strstr(const char *str, const char *to_find);
 char				*ft_strnstr(const char *str, const char *to_find, size_t n);
 char				*ft_strncat(char *s1, const char *s2, size_t n);
 int					ft_strcmp(const char *s1, const char *s2);
-char				*ft_strcat(char *s1, const char *s2);
+char				*ft_strcat(char *dest, const char *src);
 int					ft_strncmp(const char *s1, const char *s2, size_t n);
 int					ft_isdigit(int c);
 int					ft_atoi(const char *str);
@@ -50,7 +50,7 @@ void				ft_bzero(void *s, size_t n);
 void				*ft_memset(void *b, int c, size_t len);
 void				*ft_memccpy(void *dst, const void *src, int c, size_t n);
 void				*ft_memmove(void *dst, const void *src, size_t len);
-char				*ft_strcat(char *s1, const char *s2);
+char				*ft_strcat(char *dest, const char *src);
 void				*ft_memchr(const void *s, int c, size_t n);
 int					ft_memcmp(const void *s1, const void *s2, size_t n);
 void				*ft_memalloc(size_t size);
@@ -90,8 +90,5 @@ int					ft_cpyuntil(char **dst, char *src, char c);
 void				ft_lstaddback(t_list *lst, t_list *new);
 char				*ft_strjoinch(char const *s1, char c);
 void				ft_swap(int *a, int *b);
-int 				ft_is_null_ptr(void *ptr);
-char				*ft_strjoinf(char  *s1, char  *s2);
-char 				*ft_strcopy_until(const char *string, char ch);
 
 #endif
